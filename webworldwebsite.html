@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image:url('img/Chicken Hakka noodles.jpeg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>logo</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">MENU</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">CONTACT</button></p>
+    <p><button onclick="document.getElementById('LoginModal').style.display='block'" class="w3-button w3-black">LOGIN</button></p>
+    <!-- <p><button onclick="document.getElementById('Admin').style.display='block'" class="w3-button w3-black">Admin</button></p> -->
+    <p><button onclick="document.getElementById('offers').style.display='block'" class="w3-button w3-black">DELIGHTFUL FOOD</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge-pink">Monday - Friday 10-23 | Saturday 14-02</p>
+    <p class="w3-large-pink">42 Village St, New York</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Tomato Soup <b>$2.50</b></h5>
+      <h5>Chicken Salad <b>$3.50</b></h5>
+      <h5>Bread and Butter <b>$1.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+      <h5>Italian Pizza <b>$5.50</b></h5>
+      <h5>Veggie Pasta <b>$4.00</b></h5>
+      <h5>Chicken and Potatoes <b>$6.50</b></h5>
+      <h5>Deluxe Burger <b>$5.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Brownie with ice cream <b>$8.50</b></h5>
+      <h5>Falooda <b>$5.50</b></h5>
+      <h5>Milkshake <b>$4.00</b></h5>
+    </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Phone" required name="Phone"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People" min="4" max="10"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="DateTimeNow()"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Reservation Id" required name="ReservationId" onfocus="this.value = Math.floor(Math.random() * 100000)"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="LoginModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black">
+            <span onclick="document.getElementById('LoginModal').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Login</h1>
+        </div>
+        <div class="w3-container">
+            <form id="loginForm">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required name="Password"></p>
+                <p><button class="w3-button" type="submit1">Login</button></p>
+            </form>
+        <div id="LoginData"></div>
+    </div>
+        </div>
+    </div>
+</div>
+
+<!-- Admin Modal -->
+<div id="Admin" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black">
+            <span onclick="document.getElementById('Admin').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+            <h1>Admin</h1>
+        </div>
+        <div class="w3-container">
+            <div id="Admincard"></div>
+        </div>
+    </div>
+</div>
+
+<!-- OFFERS Modal -->
+<div id="offers" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black">
+            <span onclick="document.getElementById('offers').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+            <h1>DELIGHTFUL FOOD</h1>
+        </div>
+        <div class="w3-container">
+            <div id="offerscard"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // generate javascript codes to store contact form data in a datadictionary  and display it in the Admin modal when the form is submitted each time.Display each submitted
+    //form data in a new card. for upto 10 times
+     /*const formData = {};
+    const formDataList = [];
+
+
+    document.querySelector('#contact form').addEventListener('submit', (event) => {
+        event.preventDefault();
+        const formElements = event.target.elements;
+
+        for (let i = 0; i < formElements.length; i++) {
+            const element = formElements[i];
+            if (element.name) {
+                formData[element.name] = element.value;
+            }
+        }
+
+        displayAdminData();
+    });
+
+    function displayAdminData() {
+        const adminCard = document.getElementById('Admincard');
+        adminCard.innerHTML = `
+            <h2>Contact Form Data</h2>
+            <p><strong>Name:</strong> ${formData.Name || ''}</p>
+            <p><strong>People:</strong> ${formData.People || ''}</p>
+            <p><strong>Date:</strong> ${formData.date || ''}</p>
+            <p><strong>Message:</strong> ${formData.Message || ''}</p>
+        `;
+    } */
+</script>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = event.target.elements['Name'].value;
+        const pass = event.target.elements['Password'].value;
+
+        if (name === 'admin' && pass === 'password') {
+            document.getElementById('LoginModal').style.display = 'none';
+            document.getElementById('Admin').style.display = 'block';
+        } else {
+            alert('Invalid credentials. Please try again.');
+        }
+
+        event.target.reset();
+    });
+</script>
+<script>
+    // Create a login modal for the admin modal on clicking the admin button and verify login
+  /*  const loginModal = document.createElement('div');
+    loginModal.className = 'w3-modal';
+    loginModal.id = 'loginModal';
+    loginModal.innerHTML = `
+        <div class="w3-modal-content w3-animate-zoom">
+            <div class="w3-container">
+                <span onclick="document.getElementById('loginModal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Admin Login</h2>
+                <form id="loginForm">
+                    <p><input class="w3-input w3-border" type="text" id="username" name="username" placeholder="Username" required></p>
+                    <p><input class="w3-input w3-border" type="password" id="password" name="password" placeholder="Password" required></p>
+                    <p><button type="submit" class="w3-button w3-black">Login</button></p>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(loginModal);
+
+    document.querySelector('.w3-button[onclick*="Admin"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('loginModal').style.display = 'block';
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        if (username === 'admin' && password === 'password') {
+            document.getElementById('loginModal').style.display = 'none';
+            document.getElementById('Admin').style.display = 'block';
+        } else {
+            alert('Invalid credentials. Please try again.');
+        }
+    });
+
+    const loginModal = document.createElement('div');
+    loginModal.className = 'w3-modal';
+    loginModal.innerHTML = `
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="this.parentElement.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h2>Admin Login</h2>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="w3-button w3-black">Login</button>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(loginModal);
+    document.getElementById('Admin').addEventListener('click', function() {
+        loginModal.style.display = 'block';
+    });
+
+    // Validate login credentials
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (replace with your own logic)
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+                loginModal.style.display = 'none';
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+        });  */
+
+
+
+
+
+
+    //generate javascript code to store contact form data on each submit and display each submitted data in a card form upto 10 cards.
+    const formDataList = [];
+
+    document.querySelector('#contact form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        if (formDataList.length >= 30) return;
+
+        const form = event.target;
+        const data = {
+            Name: form.Name.value,
+            Phone: form.Phone.value,
+            People: form.People.value,
+            date: form.date.value,
+            Message: form.Message.value,
+            ReservationId: form.ReservationId.value
+        };
+        formDataList.push(data);
+        displayAdminCards();
+        form.reset();
+    });
+
+    function displayAdminCards() {
+        const adminCard = document.getElementById('Admincard');
+        adminCard.innerHTML = '';
+        formDataList.forEach((data, idx) => {
+            const card = document.createElement('div');
+            card.className = 'w3-card w3-margin w3-padding w3-white w3-text-black';
+            card.innerHTML = `
+                <h3>Submission ${idx + 1}</h3>
+                <p><strong>Name:</strong> ${data.Name}</p>
+                <p><strong>Phone:</strong> ${data.Phone}</p>
+                <p><strong>People:</strong> ${data.People}</p>
+                <p><strong>Date:</strong> ${data.date}</p>
+                <p><strong>Message:</strong> ${data.Message}</p>
+                <p><strong>Reservation Id:</strong> ${data.ReservationId}</p>
+            `;
+            adminCard.appendChild(card);
+        });
+    }
+    //keep all the cards even after refresh
+    window.addEventListener('beforeunload', () => {
+        localStorage.setItem('formDataList', JSON.stringify(formDataList));
+    });
+
+    window.addEventListener('load', () => {
+        const storedData = localStorage.getItem('formDataList');
+        if (storedData) {
+            formDataList.push(...JSON.parse(storedData));
+            displayAdminCards();
+        }
+    });
+    
+</script>
+<!----<script>
+        // Validate login credentials
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (replace with your own logic)
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+                loginModal.style.display = 'none';
+            } else {
+                alert('Invalid credentials. Please try again.');
+            }
+        });
+    </script>  ---->
+
+<script>
+    /*
+    This script adds a "Send Message" button to each admin card. 
+    When clicked, it simulates sending a fixed message (and optionally an image) to the phone number (People field).
+    The Message field can accept image URLs (comma separated for multiple images).
+    */
+
+    function addSendButtons() {
+        const adminCard = document.getElementById('Admincard');
+        const cards = adminCard.querySelectorAll('.w3-card');
+        cards.forEach((card, idx) => {
+            // Prevent duplicate buttons
+            if (card.querySelector('.send-btn')) return;
+
+            const btn = document.createElement('button');
+            btn.textContent = 'Send Message';
+            btn.className = 'w3-button w3-black send-btn w3-margin-top';
+            btn.onclick = function() {
+                const data = formDataList[idx];
+                const ReservationId = data.ReservationId;
+                const phone = data.Phone;
+                const fixedMsg = "Thank you for contacting us! Your reservation " + ReservationId + " is received.";
+                let images = [];
+                // Check if Message field contains image URLs (comma separated)
+                if (data.Message && (data.Message.startsWith('http://') || data.Message.startsWith('https://'))) {
+                    images = data.Message.split(',').map(url => url.trim());
+                }
+                // Simulate sending
+                alert(
+                    `Sending to: ${phone}\nMessage: ${fixedMsg}` +
+                    (images.length ? `\nImages:\n${images.join('\n')}` : '')
+                );
+                  //////// my idea
+
+                // Here you would integrate with an SMS/MMS API to actually send the message and images
+                // Load environment variables from .env file
+require('dotenv').config();
+
+// Require the Twilio module and initialize the client
+const twilio = require('twilio');
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+const twilioPhoneNumber = process.env.TWILIO_PHONE_NUMBER;
+
+const client = new twilio(accountSid, authToken);
+
+// Define the function to send the SMS
+const sendSms = async (phone, messageBody) => {
+  try {
+    const message = await client.messages.create({
+      body: messageBody,
+      to:'+18777804236', // Recipient's phone number
+      from: '+19706276048' , // Your Twilio phone number
+    });
+    console.log(`Message sent successfully. SID: ${message.sid}`);
+    return message;
+  } catch (error) {
+    console.error('Error sending message:', error);
+    throw error;
+  }
+};
+
+// Example usage:
+const recipientNumber = '9435549751'; // Replace with the recipient's number
+const myMessage = 'Hello from your localhost! This is a test SMS via Twilio.';
+
+sendSms(recipientNumber, myMessage);
+sendMessage(phone, fixedMsg, images);
+
+                // Example: sendMessage(phone, fixedMsg, images);
+            };
+            card.appendChild(btn);
+        });
+    }
+
+    //add a button to create a datalist to store each form submission data in pdf in a tabular format
+    function addExportButton() {
+        const adminCard = document.getElementById('Admincard');
+        const cards = adminCard.querySelectorAll('.w3-card');
+        cards.forEach((card, idx) => {
+            // Prevent duplicate buttons
+            if (card.querySelector('.list-btn')) return;
+
+            const btn = document.createElement('button');
+            btn.textContent = 'make a datalist in pdf';
+            btn.className = 'w3-button w3-black list-btn w3-margin-top w3-margin-left';
+            btn.onclick = function() {
+                // Logic to create a PDF from formDataList
+               /* const doc = new jsPDF(); */
+                const doc = new html2canvasScript();
+                doc.text('Contact Form Submissions', 10, 10);
+                doc.setFontSize(12);
+                doc.text(`Total Submissions: ${formDataList.length}`, 10, 20);
+                doc.text('Submission Details:', 10, 30);
+                doc.setFontSize(10);
+                formDataList.forEach((data, index) => {
+                    const yOffset = 40 + index * 30;
+                    doc.text(`Submission ${index + 1}:`, 10, yOffset);
+                    doc.text(`Name: ${data.Name}`, 10, yOffset + 10);
+                    doc.text(`Phone: ${data.Phone}`, 10, yOffset + 20);
+                    doc.text(`People: ${data.People}`, 10, yOffset + 30);
+                    doc.text(`Date: ${data.date}`, 10, yOffset + 40);
+                    doc.text(`Message: ${data.Message}`, 10, yOffset + 50);
+                    doc.text(`ReservationId: ${data.ReservationId}`, 10, yOffset + 60);
+                });
+
+              
+                doc.save('form-data.pdf');
+            };
+            card.appendChild(btn);
+        });
+    }
+
+        // Add button to view PDF
+        function addViewButton() {
+        const adminCard = document.getElementById('Admincard');
+        const cards = adminCard.querySelectorAll('.w3-card');
+        cards.forEach((card, idx) => {
+            // Prevent duplicate buttons
+            if (card.querySelector('.view-btn')) return;
+            const btn= document.createElement('button');
+            btn.textContent = 'viewpdf';
+            btn.className = 'w3-button w3-black view-btn w3-margin-top w3-margin-left';
+            btn.onclick = function() {
+            const pdfWindow = window.open('form-data.pdf', '_blank'); //'' instead of 'form-data. pdf'
+            pdfWindow.document.write('<iframe width="100%" height="100%" src="form-data.pdf"></iframe>');
+        };
+        card.appendChild(btn);
+        });
+
+        // Hook into displayAdminCards to add buttons after rendering
+        const origDisplayAdminCards = displayAdminCards;
+        displayAdminCards = function() {
+            origDisplayAdminCards();
+            addSendButtons();
+            addExportButton();
+            addViewButton();
+        }
+    }
+
+
+    // Initial call to add buttons if there are existing cards
+    addSendButtons();
+    addExportButton();
+    addViewButton();
+
+    
+    
+
+</script>
+<script>
+    // generate code to add a 'order' button to each food item in the menu modal and handle click event in such a way that it adds that item to a cart and displays the cart in the offers modal
+    const cart = [];
+
+    // Helper: Add order buttons to each menu item
+    function addOrderButtonsToMenu() {
+        // Starters
+        const starters = [
+            { name: "Tomato Soup", price: "$2.50" },
+            { name: "Chicken Salad", price: "$3.50" },
+            { name: "Bread and Butter", price: "$1.00" }
+        ];
+        // Main Courses
+        const mains = [
+            { name: "Grilled Fish and Potatoes", price: "$8.50" },
+            { name: "Italian Pizza", price: "$5.50" },
+            { name: "Veggie Pasta", price: "$4.00" },
+            { name: "Chicken and Potatoes", price: "$6.50" },
+            { name: "Deluxe Burger", price: "$5.00" }
+        ];
+        // Desserts
+        const desserts = [
+            { name: "Fruit Salad", price: "$2.50" },
+            { name: "Brownie Ice cream", price: "$2.00" },
+            { name: "Chocolate Cake", price: "$4.00" },
+            { name: "Cheese", price: "$5.50" }
+        ];
+
+        // Add buttons to Starters
+        const starterContainer = document.querySelectorAll('#menu .w3-container')[1];
+        if (starterContainer) {
+            Array.from(starterContainer.querySelectorAll('h5')).forEach((h5, i) => {
+                if (!h5.querySelector('.order-btn')) {
+                    const btn = document.createElement('button');
+                    btn.textContent = 'Order';
+                    btn.className = 'w3-button w3-small w3-black order-btn w3-margin-left';
+                    btn.onclick = function() {
+                        cart.push(starters[i]);
+                        displayCart();
+                    };
+                    h5.appendChild(btn);
+                }
+            });
+        }
+
+        // Add buttons to Main Courses
+        const mainContainer = document.querySelectorAll('#menu .w3-container')[3];
+        if (mainContainer) {
+            Array.from(mainContainer.querySelectorAll('h5')).forEach((h5, i) => {
+                if (!h5.querySelector('.order-btn')) {
+                    const btn = document.createElement('button');
+                    btn.textContent = 'Order';
+                    btn.className = 'w3-button w3-small w3-black order-btn w3-margin-left';
+                    btn.onclick = function() {
+                        cart.push(mains[i]);
+                        displayCart();
+                    };
+                    h5.appendChild(btn);
+                }
+            });
+        }
+
+        // Add buttons to Desserts (card layout)
+        const dessertContainer = document.querySelectorAll('#menu .w3-container')[5];
+        if (dessertContainer) {
+            Array.from(dessertContainer.querySelectorAll('h5')).forEach((h5, i) => {
+                if (!h5.querySelector('.order-btn')) {
+                    const btn = document.createElement('button');
+                    btn.textContent = 'Order';
+                    btn.className = 'w3-button w3-small w3-black order-btn w3-margin-left';
+                    btn.onclick = function() {
+                        cart.push(desserts[i]);
+                        displayCart();
+                    };
+                    h5.appendChild(btn);
+                }
+            });
+        }
+    }
+        
+
+    // Display cart in offers modal with pictures and grand total and payment button
+    function displayCart() {
+        const offersCard = document.getElementById('offerscard');
+        if (!offersCard) return;
+        if (cart.length === 0) {
+            offersCard.innerHTML = '<p>Your cart is empty. Please add items only inside the restaurant.</p>';
+            return;
+        }
+
+        // Map item names to image URLs
+        const itemImages = {
+            "Tomato Soup": "img/Dal makhani.jpeg",
+            "Chicken Salad": "img/Paneer Butter masala.jpeg",
+            "Bread and Butter": "https://www.w3schools.com/w3images/bread.jpg",
+            "Grilled Fish and Potatoes": "https://www.w3schools.com/w3images/fish.jpg",
+            "Italian Pizza": "https://www.w3schools.com/w3images/pizza.jpg",
+            "Veggie Pasta": "https://www.w3schools.com/w3images/pasta.jpg",
+            "Chicken and Potatoes": "https://www.w3schools.com/w3images/chicken.jpg",
+            "Deluxe Burger": "https://www.w3schools.com/w3images/burger.jpg",
+            "Fruit Salad": "https://www.w3schools.com/w3images/fruit salad.jpg",
+            "Brownie Ice cream": "https://www.w3schools.com/w3images/brownie with ice cream.jpg",
+            "Falooda": "https://www.w3schools.com/w3images/Falooda.jpg",
+            "Milkshake": "https://www.w3schools.com/w3images/Milkshake.jpg"
+        };
+
+        let total = 0;
+        let html = '<h3>Your Cart</h3><ul class="w3-ul">';
+        cart.forEach((item, idx) => {
+            const priceNum = parseFloat(item.price.replace('$', '')) || 0;
+            total += priceNum;
+            const imgSrc = itemImages[item.name] || '';
+            html += `<li>
+                ${imgSrc ? `<img src="${imgSrc}" alt="${item.name}" style="width:50px;height:50px;object-fit:cover;margin-right:10px;vertical-align:middle;">` : ''}
+                <span style="vertical-align:middle;">${item.name} - ${item.price}</span>
+                <button class="w3-button w3-tiny w3-red" onclick="removeFromCart(${idx})">Remove</button>
+            </li>`;
+        });
+        html += `</ul>
+            <h4>Grand Total: $${total.toFixed(2)}</h4>
+            <button class="w3-button w3-green w3-margin-top" onclick="generateInvoice()">Payment</button>
+        `;
+        offersCard.innerHTML = html;
+
+        // Store cart in localStorage for invoice generation
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    // PDF invoice generation using jsPDF and html2canvas
+    window.generateInvoice = function() {
+        // Load jsPDF and html2canvas from CDN if not already loaded
+        if (typeof window.jspdf === "undefined" || typeof window.html2canvas === "undefined") {
+            const jsPDFScript = document.createElement('script');
+            jsPDFScript.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+            document.body.appendChild(jsPDFScript);
+
+            const html2canvasScript = document.createElement('script');
+            html2canvasScript.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+            document.body.appendChild(html2canvasScript);
+
+            jsPDFScript.onload = html2canvasScript.onload = function() {
+                setTimeout(window.generateInvoice, 500); // Wait for scripts to load
+            };
+            return;
+        }
+
+        // Create a temporary invoice element
+        const cartData = JSON.parse(localStorage.getItem('cart') || "[]");
+        if (!cartData.length) {
+            alert("Cart is empty!");
+            return;
+        }
+
+        // Map item names to image URLs (same as above)
+        const itemImages = {
+            "Tomato Soup": "https://www.w3schools.com/w3images/soup.jpg",
+            "Chicken Salad": "https://www.w3schools.com/w3images/salad.jpg",
+            "Bread and Butter": "https://www.w3schools.com/w3images/bread.jpg",
+            "Grilled Fish and Potatoes": "https://www.w3schools.com/w3images/fish.jpg",
+            "Italian Pizza": "https://www.w3schools.com/w3images/pizza.jpg",
+            "Veggie Pasta": "https://www.w3schools.com/w3images/pasta.jpg",
+            "Chicken and Potatoes": "https://www.w3schools.com/w3images/chicken.jpg",
+            "Deluxe Burger": "https://www.w3schools.com/w3images/burger.jpg",
+            "Fruit Salad": "https://www.w3schools.com/w3images/fruitsalad.jpg",
+            "Brownie Ice cream": "img/Brownie with ice cream.jpeg",
+            "Chocolate Cake": "/w3images/chocolate_cake.jpg",
+            "Cheese": "/w3images/cheese.jpg"
+        };
+
+        let total = 0;
+        let invoiceHtml = `
+            <div id="invoice" style="width:400px;padding:20px;font-family:sans-serif;">
+                <h2 style="text-align:center;">Invoice</h2>
+                <table style="width:100%;border-collapse:collapse;">
+                    <thead>
+                        <p>Name: Your Restaurant</p>
+                        <p>Phone: +1 234 567 890</p>
+                        <p>Website: www.yourrestaurant.com</p>
+                        <p>Address: 42 Village St, New York</p>
+                        <p>Date: ${new Date().toLocaleDateString()}</p>
+                        <p>Time: ${new Date().toLocaleTimeString()}</p>
+                        <p>Invoice #: ${Math.floor(Math.random() * 100000)}</p>
+                        
+
+                        <tr>
+
+                            <!-- <th style="border-bottom:1px solid #ccc;text-align:left;">Image</th> -->
+                            <th style="border-bottom:1px solid #ccc;text-align:left;">Item</th>
+                            <th style="border-bottom:1px solid #ccc;text-align:left;">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        `;
+        cartData.forEach(item => {
+            const priceNum = parseFloat(item.price.replace('$', '')) || 0;
+            total += priceNum;
+            const imgSrc = itemImages[item.images] || '';
+            invoiceHtml += `<tr>
+                <td style="padding:5px 0;">
+                   <!-- ${imgSrc ? `<img src="${imgSrc}" alt="${item.name}" style="width:40px;height:40px;object-fit:cover;vertical-align:middle;margin-right:8px;">` : ''} -->
+                    <span style="vertical-align:middle;">${item.name}</span>
+                </td>
+                <td style="padding:5px 0;">${item.price}</td>
+            </tr>`;
+        });
+        invoiceHtml += `
+                    </tbody>
+                </table>
+                <h3 style="text-align:right;">Grand Total: $${total.toFixed(2)}</h3>
+            </div>
+        `;
+
+        // Create a hidden div for rendering
+        let tempDiv = document.getElementById('temp-invoice-div');
+        if (!tempDiv) {
+            tempDiv = document.createElement('div');
+            tempDiv.id = 'temp-invoice-div';
+            tempDiv.style.position = 'fixed';
+            tempDiv.style.left = '-9999px';
+            tempDiv.style.top = '0';
+            document.body.appendChild(tempDiv);
+        }
+        tempDiv.innerHTML = invoiceHtml;
+
+        // Use html2canvas and jsPDF to generate PDF
+        window.html2canvas(tempDiv.querySelector('#invoice')).then(canvas => {
+            const imgData = canvas.toDataURL('image/png,jpeg');
+            const pdf = new window.jspdf.jsPDF();
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+            pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
+            pdf.save('invoice.pdf');
+        });
+    };
+
+    //increase decrease item quantity
+    window.updateCartItemQuantity = function(idx, quantity) {
+        if (cart[idx]) {
+            cart[idx].quantity = quantity;
+            displayCart();
+        }
+    };
+
+    // Remove item from cart
+    window.removeFromCart = function(idx) {
+        cart.splice(idx, 1);
+        displayCart();
+    };
+
+    // Add order buttons when menu modal is opened
+    document.querySelector('button[onclick*="menu"]').addEventListener('click', addOrderButtonsToMenu);
+
+    // Show cart when offers modal is opened    
+    document.querySelector('button[onclick*="offers"]').addEventListener('click', displayCart);
+</script>
+
+<script>
+    //generate codes to create a PDF database of each invoice generated and store it in a folder named invoices
+    
+
+    // This functionality typically requires server-side code to handle file storage.
+    // You would need to implement an API endpoint to receive the PDF data and save it to the server. generate it and call it
+    
+</script>
+
+</body>
+</html>
+
