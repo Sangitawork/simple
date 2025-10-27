@@ -8,5 +8,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/circularmenu.html"
   status = 200
