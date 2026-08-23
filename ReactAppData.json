@@ -3,7 +3,8 @@
 	 
 	  {
 			"checkbox": false,
-			"invoice": { "title": "INV - 2593", "url": "restaurant_invoice (3).pdf" },
+			"invoice": { "title": "INV - 2593", "url": "https://github.com/Sangitawork/simple/blob/main/restaurant_invoice (3).pdf?raw=true"
+			 },
 			"contact": {
 				"title": "Purpella",
 				"email": "Purpella@company.io",
