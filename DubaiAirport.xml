@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <submissions>
   <submission>
-    <name>DubaiAirport</name>
-    <email>admin@example.com</email>
-    <timestamp>2026-09-17T00:00:00Z</timestamp>
-    <image>https://raw.githubusercontent.com/Sangitawork/simple/main/uploads/1789654202907-1763452290063.jpeg</image>
+    
+        <name></name>
+        <email></email>
+        <phone></phone>
+        <id></id>
+        <designation></designation>
+        <department></department>
+        <address></address>
+        <datetime></datetime>
+      
+
   </submission>
 </submissions>
