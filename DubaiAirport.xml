@@ -191,4 +191,14 @@
         <address>542 street</address>
         <datetime>2026-11-14T14:17</datetime>
         <image>https://raw.githubusercontent.com/Sangitawork/simple/main/uploads/1794646059912-logo192.png</image>
+      </submission><submission>
+        <name>logo1</name>
+        <email>logo1@gmail.com</email>
+        <phone>+1 (555) 123-456</phone>
+        <id>4211</id>
+        <designation>Web developer</designation>
+        <department>IT</department>
+        <address>Kumarpara</address>
+        <datetime>2026-11-14T19:49</datetime>
+        <image>https://raw.githubusercontent.com/Sangitawork/simple/main/uploads/1794666049245-logo512.png</image>
       </submission></submissions>
