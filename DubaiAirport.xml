@@ -241,4 +241,14 @@
         <address>Fayez Ahmed Rd</address>
         <datetime>2026-11-14T19:55</datetime>
         <image>https://raw.githubusercontent.com/Sangitawork/simple/main/uploads/1794666309385-logo512.png</image>
+      </submission><submission>
+        <name>dimsum</name>
+        <email>dim@gmail.com</email>
+        <phone>+1 (555) 123-456</phone>
+        <id>54676</id>
+        <designation>Web developer</designation>
+        <department>IT</department>
+        <address>KUMARPARA</address>
+        <datetime>2026-11-14T19:57</datetime>
+        <image>https://raw.githubusercontent.com/Sangitawork/simple/main/uploads/1794666500031-dimsum.jpeg</image>
       </submission></submissions>
