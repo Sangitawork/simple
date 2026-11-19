@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AttendanceRegistry>
-  <EmployeeRecord id="{{userId}}">
-    <Username>{{username}}</Username>
-    <RegistrationDate>{{registrationDate}}</RegistrationDate>
+  <EmployeeRecord>
+    <Username></Username>
+    <RegistrationDate></RegistrationDate>
     <SecurityScheme>
       <Algorithm>AES-GCM-256</Algorithm>
-      <IV>{{iv}}</IV>
+      <IV></IV>
     </SecurityScheme>
-    <WebAuthnCredentialId>{{credentialId}}</WebAuthnCredentialId>
-    <EncryptedPublicKey>{{encryptedPublicKey}}</EncryptedPublicKey>
+    <WebAuthnCredentialId></WebAuthnCredentialId>
+    <EncryptedPublicKey></EncryptedPublicKey>
   </EmployeeRecord>
 </AttendanceRegistry>
